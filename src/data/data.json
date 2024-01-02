@@ -1,0 +1,48 @@
+[
+    {
+        "id" : 1,
+        "type": "incoming",
+        "text": "Hello There!! How can I help you",
+        "buttons": [
+            {
+                "text": "Course", 
+                "value": 2
+            },
+            { 
+                "text": "Fees", 
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "type": "incoming",
+        "text": "Which course Info do you require??",
+        "buttons": [
+            {
+                "text" : "NEET",
+                "value" : "Course 1"
+            },
+            {
+                "text": "JEE",
+                "value": "Course 2"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "type": "incoming",
+        "text": "Fee details: ",
+        "buttons": [
+            { 
+                "text": "Fee JEE: $1000", 
+                "value": "Fee JEE" 
+            },
+            { 
+                "text": "Fee IAT: $1000", 
+                "value": "Fee IAT" 
+            }
+        ]
+    }
+  ]
+  
