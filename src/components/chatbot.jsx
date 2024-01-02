@@ -150,10 +150,6 @@ const Chatbot = () => {
 
   return (
     <div className={visibleBot ? "show-chatbot" : ""}>
-      {/* <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-      /> */}
       <button className="chatbot-toggler" onClick={toggleView}>
         <img src={Robot} alt="message" />
         <img src={CloseSvg} alt="close button" />
@@ -161,7 +157,7 @@ const Chatbot = () => {
       <div className="chatbot">
         <header>
           <h1>Chat Bot </h1>
-          <img src={CloseSvg} alt="close button" />
+          <img src={CloseSvg} alt="close button" onClick={toggleView} />
         </header>
 
         <ul className="chatbox" ref={chatbox}></ul>
