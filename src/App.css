@@ -15,11 +15,6 @@
   padding: 10px;
 }
 
-.arrow:hover,
-.arrow:enabled {
-  opacity: 0;
-}
-
 @media (max-width: 1200px) {
   .arrow {
     left: 15%;
