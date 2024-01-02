@@ -1,12 +1,13 @@
-import Chatbot from './components/chatbot'
+import Chatbot from "./components/chatbot";
+import "./app.css";
 
 function App() {
-
   return (
     <>
-    <Chatbot />
+      <div className="arrow">ChatBot here 👉</div>
+      <Chatbot />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

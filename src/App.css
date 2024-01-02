@@ -1,0 +1,65 @@
+.arrow {
+  box-sizing: border-box;
+  background-color: aqua;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem;
+  font-family: "Poppis", sans-serif;
+  position: fixed;
+  top: 90%;
+  left: 10%;
+  border-radius: 12px;
+  box-shadow: 1px 1px 20px 0px black;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+}
+
+.arrow:hover,
+.arrow:enabled {
+  opacity: 0;
+}
+
+@media (max-width: 1200px) {
+  .arrow {
+    left: 15%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .arrow {
+    left: 15%;
+  }
+}
+@media (max-width: 900px) {
+  .arrow {
+    left: 15%;
+  }
+}
+
+@media (max-width: 800px) {
+  .arrow {
+    left: 18%;
+  }
+}
+
+@media (max-width: 700px) {
+  .arrow {
+    left: 18%;
+  }
+}
+
+@media (max-width: 600px) {
+  .arrow {
+    left: 18%;
+    font-size: 1rem;
+    top: 88%;
+  }
+}
+
+@media (max-width: 400px) {
+  .arrow {
+    left: 15%;
+    opacity: 0;
+  }
+}
