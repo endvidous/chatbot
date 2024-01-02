@@ -2,6 +2,10 @@
 import React, { useRef, useState } from "react";
 import "./chatbot.css";
 import data from "../data/data.json";
+import CloseSvg from "../svg/close.svg";
+import SmartToySvg from "../svg/smart_toy.svg";
+import SendSvg from "../svg/send.svg";
+import Robot from "../svg/robot.svg";
 
 const Chatbot = () => {
   const textareaRef = useRef(null);
@@ -68,7 +72,7 @@ const Chatbot = () => {
         ? `<div class="text">
             <p></p>
           </div>`
-        : `<span class='material-symbols-outlined'>smart_toy</span>
+        : `<img src=${SmartToySvg} alt="chatbot" />
           <div class='text'>
             <p></p>
           </div>`;
@@ -146,20 +150,18 @@ const Chatbot = () => {
 
   return (
     <div className={visibleBot ? "show-chatbot" : ""}>
-      <link
+      {/* <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-      />
+      /> */}
       <button className="chatbot-toggler" onClick={toggleView}>
-        <span className="material-symbols-outlined">mode_comment</span>
-        <span className="material-symbols-outlined">close</span>
+        <img src={Robot} alt="message" />
+        <img src={CloseSvg} alt="close button" />
       </button>
       <div className="chatbot">
         <header>
           <h1>Chat Bot </h1>
-          <span className="material-symbols-outlined" onClick={toggleView}>
-            close
-          </span>
+          <img src={CloseSvg} alt="close button" />
         </header>
 
         <ul className="chatbox" ref={chatbox}></ul>
@@ -172,9 +174,7 @@ const Chatbot = () => {
             onKeyDown={keypressed}
             onChange={adjustTextareaHeight}
           ></textarea>
-          <span className="material-symbols-outlined" onClick={handleclick}>
-            send
-          </span>
+          <img src={SendSvg} alt="send button" onClick={handleclick} />
         </div>
       </div>
     </div>
